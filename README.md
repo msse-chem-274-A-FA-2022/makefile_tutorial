@@ -14,3 +14,9 @@ For this tutorial, we will incrementally write a small `Makefile.` Then you will
 
 ## Makefile Tutorial
 This repostiory contains a very simple C++ project.
+
+This project can be compiled with
+
+```
+g++ -o hellomake hellomake.cpp hellofunc.cpp
+````
