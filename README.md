@@ -19,4 +19,28 @@ This project can be compiled with
 
 ```
 g++ -o hellomake hellomake.cpp hellofunc.cpp
-````
+```
+
+## Task
+Take a minute or two to look at the code and describe what it does (it's very simple).
+
+Try making the different targets in this `Makefile`. Write comment above each Makefile target to explain what it does. 
+
+What do these lines represent?
+
+```
+CC = g++
+CFLAGS = -g -Wall
+NAME = hellomake
+```
+
+What happens if you remove the targets that end in `.o`?
+
+For example, what happens if you remove
+
+```
+hellofunc.o: hellofunc.cpp
+	$(CC) $(CFLAGS) -c hellofunc.cpp
+```
+
+Can you think of any advantages of using something like `hellomake_v2` or `hellomake_v3`/
